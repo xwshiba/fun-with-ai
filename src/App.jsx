@@ -26,7 +26,7 @@ function App() {
       const { engine, prompt } = userInput;
       if (prompt) {
         fetchFromOpenAI(engine, prompt);
-      }
+      };
     },
     [userInput]
   );
