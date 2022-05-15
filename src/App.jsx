@@ -19,17 +19,7 @@ function App() {
   const [preset, setPreset] = useState('');
   const [responseEntry, setResponseEntry] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-
-
-  useEffect(
-    () => {
-      const { engine, prompt } = userInput;
-      if (prompt) {
-        fetchFromOpenAI(engine, prompt);
-      };
-    },
-    [userInput]
-  );
+  const [latestId, setLatestId] = useState('');
 
 
   const handleFormData = (e) => {
@@ -44,6 +34,17 @@ function App() {
     e.target.reset();
     setPreset('');
   };
+
+
+  useEffect(
+    () => {
+      const { engine, prompt } = userInput;
+      if (prompt) {
+        fetchFromOpenAI(engine, prompt);
+      };
+    },
+    [userInput]
+  );
 
   const fetchFromOpenAI = (engine, prompt) => {
 
@@ -60,15 +61,17 @@ function App() {
         setIsLoading(false);
       })
       .catch(err => {
-        console.log(err);
         let errCode = err['error'];
         setError(MESSAGES[errCode] || MESSAGES.genericError);
 
         setIsLoading(false);
       });
-  }
+  };
+
 
   function saveResponseEntry(id, userPrompt, model, responseMessage) {
+    setLatestId(id);
+
     setResponseEntry({
       [id]: {
         prompt: userPrompt,
@@ -78,6 +81,7 @@ function App() {
       ...responseEntry,
     });
   };
+
 
   return (
     <div className="app">
@@ -129,8 +133,13 @@ function App() {
       <div className="ai">
         <h1 className="title">AI Responses</h1>
         {error ? (<div className="status">{error}</div>) : ''}
-        <Responses responseEntry={responseEntry} />
+        <Responses responseEntry={responseEntry} latestId={latestId} isLoading={isLoading} />
       </div>
+
+      <footer className="footer">
+        <p className="footer__info">&#169; 2022 by <a className="footer__link" href="https://github.com/xwshiba">xwshiba</a></p>
+        <p className="footer__info footer__github"><a className="footer__link" href="https://github.com/xwshiba">Github</a></p>
+      </footer>
     </div>
   );
 }
