@@ -2,7 +2,7 @@
 
 This is a responsive web app that facilitates user interaction with AI models from OpenAI.
 
-It has been hosted on [Heroku](https://fun-ai-response.herokuapp.com/). You can play with it and see how it works.
+It has been hosted on [**Heroku**](https://fun-ai-response.herokuapp.com/). You can play with it and see how it works.
 
 User can simply send texts through the app and ai responses will be displayed in the "AI Response" section. The correspondences are sorted from latest to oldest.
 
