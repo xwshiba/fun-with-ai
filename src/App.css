@@ -52,6 +52,16 @@
   color: var(--clr-grey-4);
 }
 
+.header {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--clr-grey-2);
+
+  font-size: xx-large;
+  font-weight: 800;
+  color: var(--clr-grey-4);
+  text-shadow: 0.1rem 0.1rem #9AD0A2;
+}
+
 .title {
   margin-bottom: 1rem;
 
@@ -224,6 +234,10 @@
     max-width: 90vw;
 
     margin: 2rem auto auto auto;
+  }
+
+  .header {
+    grid-column: span 12;
   }
 
   .user {

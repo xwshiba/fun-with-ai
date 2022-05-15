@@ -85,8 +85,9 @@ function App() {
 
   return (
     <div className="app">
+      <header className="header">WeTalk.ai</header>
       <div className="user">
-        <h1 className="title">Fun with AI</h1>
+        <h1 className="title">Try a Prompt</h1>
         <Presets setPreset={setPreset} />
         <form
           method="POST"
