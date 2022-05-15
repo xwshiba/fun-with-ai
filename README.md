@@ -1,6 +1,6 @@
 ## Project Description
 
-This is a web app that facilitates user interaction with AI models from OpenAI.
+This is a responsive web app that facilitates user interaction with AI models from OpenAI.
 
 It has been hosted on [Heroku](https://fun-ai-response.herokuapp.com/). You can play with it and see how it works.
 
@@ -39,7 +39,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The code is runnable with `npm install; npm run build; npx serve -s build` in this react project directory.
 
-
 ### API Token
 API token is **not** included. You can get your own from the OpenAI platform and name it accordingly to the variable name in `services.js`.
 
+### CSS
+- The web app is responsive.
+- The web app is using mobile-first approach.
+- The CSS class names are using BEM style.
