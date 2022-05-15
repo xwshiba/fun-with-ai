@@ -138,7 +138,7 @@ function App() {
 
       <footer className="footer">
         <p className="footer__info">&#169; 2022 by <a className="footer__link" href="https://github.com/xwshiba">xwshiba</a></p>
-        <p className="footer__info footer__github"><a className="footer__link" href="https://github.com/xwshiba">Github</a></p>
+        <p className="footer__info footer__github"><a className="footer__link" href="https://github.com/xwshiba/fun-with-ai">Github</a></p>
       </footer>
     </div>
   );
