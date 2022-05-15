@@ -1,6 +1,6 @@
 function Presets({ setPreset }) {
     const presetsMessages = [
-        "write me a restaurant review about the following: nice waitress, great service",
+        "give me a description about an AI chatbot",
         "write me a poem about the Seattle rainy weather",
         "tell me a love story that happened in Seattle"
     ];
