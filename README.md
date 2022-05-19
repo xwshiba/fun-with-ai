@@ -40,7 +40,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The code is runnable with `npm install; npm run build; npx serve -s build` in this react project directory.
 
 ### API Token
-API token is **not** included. You can get your own from the OpenAI platform and name it accordingly to the variable name in `services.js`.
+API token is **not** included. You can get your own from the OpenAI platform and name it accordingly. Please see `.env.example` file for reference.
 
 ### CSS
 - The web app is responsive.
