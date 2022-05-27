@@ -4,6 +4,8 @@ This is a responsive web app that facilitates user interaction with AI models fr
 
 It has been hosted on [**Heroku**](https://fun-ai-response.herokuapp.com/). You can play with it and see how it works.
 
+__For reflections of building this script (in Mandarin), please visit my personal blog [Shiba Woof's Playground](https://www.shibe.meowshiba.com)__ 
+
 User can simply send texts through the app and ai responses will be displayed in the "AI Response" section. The correspondences are sorted from latest to oldest.
 
 **Engine**: user can also choose their own AI engine. Each engine will respond differently in terms of responding time. I only provided a few engine options that have cheap prices.
