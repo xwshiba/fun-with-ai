@@ -2,7 +2,7 @@
 
 This is a responsive web app that facilitates user interaction with AI models from OpenAI.
 
-It has been hosted on [**Heroku**](https://fun-ai-response.herokuapp.com/). You can play with it and see how it works.
+It was hosted on Heroku. Since Heroku no longer accomodate free plans, please use the developer guide below to get started and see how it works.
 
 __For reflections of building this script (in Mandarin), please visit my personal blog [Shiba Woof's Playground](https://www.shibe.meowshiba.com)__ 
 
